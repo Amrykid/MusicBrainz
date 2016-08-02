@@ -10,7 +10,7 @@ namespace Hqub.MusicBrainz.API
 {
     public class MyHttpClient
     {
-        public const string UserAgent = "SangeetManager/1.0";
+        public static string UserAgent = "SangeetManager/1.0";
 
         private HttpClient _httpClient;
         private HttpRequestMessage _requestMessage;
