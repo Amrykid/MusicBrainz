@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2BF69EC-25BB-44B6-830F-1C383410DBE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hqub.MusicBrainz.API.UWP</RootNamespace>
+    <AssemblyName>Hqub.MusicBrainz.API.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\HttpClientException.cs">
+      <Link>HttpClientException.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\ImageLoader.cs">
+      <Link>ImageLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\MyHttpClient.cs">
+      <Link>MyHttpClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\ReadableException.cs">
+      <Link>ReadableException.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\Resources\Constants.cs">
+      <Link>Resources\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\Resources\Messages.cs">
+      <Link>Resources\Messages.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API.Portable\WebRequestHelper.cs">
+      <Link>WebRequestHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Artist.cs">
+      <Link>Entities\Artist.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\ArtistList.cs">
+      <Link>Entities\Collections\ArtistList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\BaseList.cs">
+      <Link>Entities\Collections\BaseList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\MediumList.cs">
+      <Link>Entities\Collections\MediumList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\RecordingList.cs">
+      <Link>Entities\Collections\RecordingList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\RelationList.cs">
+      <Link>Entities\Collections\RelationList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\ReleaseGroupList.cs">
+      <Link>Entities\Collections\ReleaseGroupList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\ReleaseList.cs">
+      <Link>Entities\Collections\ReleaseList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\TagList.cs">
+      <Link>Entities\Collections\TagList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\TrackList.cs">
+      <Link>Entities\Collections\TrackList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Collections\WorkList.cs">
+      <Link>Entities\Collections\WorkList.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\CoverArtArchive.cs">
+      <Link>Entities\CoverArtArchive.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Entity.cs">
+      <Link>Entities\Entity.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Label.cs">
+      <Link>Entities\Label.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\LabelInfo.cs">
+      <Link>Entities\LabelInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Medium.cs">
+      <Link>Entities\Medium.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Metadata.cs">
+      <Link>Entities\Metadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Metadata\ArtistMetadata.cs">
+      <Link>Entities\Metadata\ArtistMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Metadata\RecordingMetadata.cs">
+      <Link>Entities\Metadata\RecordingMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Metadata\ReleaseGroupMetadata.cs">
+      <Link>Entities\Metadata\ReleaseGroupMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Metadata\ReleaseMetadata.cs">
+      <Link>Entities\Metadata\ReleaseMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\NameCredit.cs">
+      <Link>Entities\NameCredit.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Rating.cs">
+      <Link>Entities\Rating.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Recording.cs">
+      <Link>Entities\Recording.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Relation.cs">
+      <Link>Entities\Relation.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Release.cs">
+      <Link>Entities\Release.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\ReleaseGroup.cs">
+      <Link>Entities\ReleaseGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Tag.cs">
+      <Link>Entities\Tag.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Track.cs">
+      <Link>Entities\Track.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\Entities\Work.cs">
+      <Link>Entities\Work.cs</Link>
+    </Compile>
+    <Compile Include="..\Hqub.MusicBrainz.API\QueryParameters.cs">
+      <Link>QueryParameters.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Hqub.MusicBrainz.API.UWP.rd.xml" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
